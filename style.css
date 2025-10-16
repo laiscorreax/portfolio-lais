@@ -1,0 +1,336 @@
+/* ======= RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======= BODY ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1b1b1b, #2c2c2c);
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* ======= HEADER ======= */
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+header .highlight {
+  color: #f1c40f;
+  text-shadow: 0 0 10px rgba(241, 196, 15, 0.6);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #dfe6e9;
+}
+
+header .btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #f1c40f;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header .btn:hover {
+  background-color: #ffd700;
+  box-shadow: 0 0 20px #f1c40f, 0 0 40px rgba(241,196,15,0.6);
+  transform: scale(1.05);
+}
+
+/* ======= PERFIL PROFISSIONAL ======= */
+section#perfil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 60px 40px;
+  margin: 50px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 25px rgba(241,196,15,0.3);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+  transition: 0.3s;
+}
+
+section#perfil:hover {
+  box-shadow: 0 0 40px rgba(241,196,15,0.6), 0 0 60px rgba(241,196,15,0.3);
+}
+
+.perfil-foto img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #f1c40f;
+  box-shadow: 0 0 25px rgba(241, 196, 15, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.perfil-foto img:hover {
+  transform: scale(1.05);
+}
+
+.perfil-texto {
+  max-width: 600px;
+}
+
+.perfil-texto h2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+}
+
+.perfil-texto p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #dfe6e9;
+}
+
+section#perfil:hover .perfil-texto .destacar {
+  color: #f1c40f;
+  text-shadow: 0 0 8px #f1c40f;
+}
+
+/* ======= PROJETOS ======= */
+#projetos {
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+#projetos h2 {
+  color: #f1c40f;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projeto-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 20px;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.2);
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(241, 196, 15, 0.4);
+}
+
+.projeto-card h3 {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.projeto-card p {
+  color: #dfe6e9;
+  margin-bottom: 15px;
+}
+
+.projeto-card a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projeto-card a:hover {
+  text-decoration: underline;
+}
+
+/* ======= LINHA DIVISÓRIA ANTES DOS CONTATOS ======= */
+.linha-contato {
+  width: 80px;               /* comprimento da linha */
+  height: 3px;               /* espessura */
+  background-color: #f1c40f; /* amarelo elegante */
+  margin: 0 auto 20px auto;  /* centralizada e espaço abaixo */
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.1s;
+}
+
+/* ======= CONTATOS ======= */
+#contatos {
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.contatos-grid {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contato-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  
+  /* animação fade-in */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.contato-card:nth-child(1) { animation-delay: 0.2s; }
+.contato-card:nth-child(2) { animation-delay: 0.4s; }
+.contato-card:nth-child(3) { animation-delay: 0.6s; }
+
+.contato-card img.contato-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.contato-card span {
+  font-size: 1rem;
+  color: #f1c40f; /* amarelo elegante */
+}
+
+.contato-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 15px rgba(241,196,15,0.4);
+}
+
+.contato-card:hover img.contato-icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #f1c40f);
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #dfe6e9;
+}
+
+.social a {
+  color: #f1c40f;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.social a:hover {
+  color: #fff;
+  text-shadow: 0 0 15px #f1c40f;
+}
+
+/* ======= ANIMAÇÃO ======= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= DESTAQUE DE PALAVRAS (SOMENTE COR AMARELA) ======= */
+.perfil-texto .destacar {
+  color: #dfe6e9; /* cor padrão */
+  transition: color 0.3s; 
+  text-shadow: none; 
+}
+
+section#perfil:hover .perfil-texto .destacar {
+  color: #f1c40f; /* amarelo ao passar o mouse */
+  text-shadow: none; 
+}
+
+/* ======= RESPONSIVO ======= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  section#perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-foto img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .contato-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contato-card img.contato-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contato-card span {
+    font-size: 0.95rem;
+  }
+}
