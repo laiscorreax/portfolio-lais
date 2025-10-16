@@ -1,6 +1,6 @@
 # 🌟 Portfólio - Laís Corrêa
 
-Olá! Sou **Laís Corrêa**, estudante de Análise e Desenvolvimento de Sistemas, e este é meu **portfólio pessoal**.  
+Olá! Meu nome é **Laís Corrêa**, estudante de Análise e Desenvolvimento de Sistemas, e este é meu **portfólio pessoal**.  
 Ele foi criado com o objetivo de **praticar meus conhecimentos em front-end**, testar layouts, cores, animações e design responsivo.
 
 ---
