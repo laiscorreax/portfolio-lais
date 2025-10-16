@@ -51,6 +51,6 @@ Se quiser entrar em contato:
 
 ## ❤️ Agradecimento
 
-Muito obrigado por visitar meu portfólio! 🌟  
+Muito obrigada por visitar meu portfólio! 🌟  
 Espero que você curta o design e a experiência de navegação.  
 Fique à vontade para me contatar ou dar feedbacks! 🎉
