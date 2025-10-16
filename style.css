@@ -1,4 +1,4 @@
-/* ======= RESET ======= */
+/*  RESET  */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ======= BODY ======= */
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0d0d0d, #1b1b1b, #2c2c2c);
@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ======= HEADER ======= */
 header {
   text-align: center;
   padding: 100px 20px 60px;
@@ -61,7 +60,7 @@ header .btn:hover {
   transform: scale(1.05);
 }
 
-/* ======= PERFIL PROFISSIONAL ======= */
+/* PERFIL PROFISSIONAL */
 section#perfil {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +120,7 @@ section#perfil:hover .perfil-texto .destacar {
   text-shadow: 0 0 8px #f1c40f;
 }
 
-/* ======= PROJETOS ======= */
+/* PROJETOS */
 #projetos {
   padding: 80px 20px;
   text-align: center;
@@ -179,11 +178,11 @@ section#perfil:hover .perfil-texto .destacar {
   text-decoration: underline;
 }
 
-/* ======= LINHA DIVISÓRIA ANTES DOS CONTATOS ======= */
+/* LINHA DIVISÓRIA ANTES DOS CONTATOS */
 .linha-contato {
   width: 80px;               /* comprimento da linha */
   height: 3px;               /* espessura */
-  background-color: #f1c40f; /* amarelo elegante */
+  background-color: #f1c40f; 
   margin: 0 auto 20px auto;  /* centralizada e espaço abaixo */
   border-radius: 2px;
   opacity: 0;
@@ -192,7 +191,7 @@ section#perfil:hover .perfil-texto .destacar {
   animation-delay: 0.1s;
 }
 
-/* ======= CONTATOS ======= */
+/* CONTATOS */
 #contatos {
   padding: 80px 20px;
   text-align: center;
@@ -204,7 +203,7 @@ section#perfil:hover .perfil-texto .destacar {
 
 .contatos-grid {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center; 
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -242,7 +241,7 @@ section#perfil:hover .perfil-texto .destacar {
 
 .contato-card span {
   font-size: 1rem;
-  color: #f1c40f; /* amarelo elegante */
+  color: #f1c40f; 
 }
 
 .contato-card:hover {
@@ -255,8 +254,7 @@ section#perfil:hover .perfil-texto .destacar {
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #f1c40f);
 }
-
-/* ======= FOOTER ======= */
+ 
 footer {
   background: rgba(0, 0, 0, 0.3);
   padding: 40px 20px;
@@ -280,7 +278,7 @@ footer p {
   text-shadow: 0 0 15px #f1c40f;
 }
 
-/* ======= ANIMAÇÃO ======= */
+/* ANIMAÇÃO */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -292,9 +290,9 @@ footer p {
   }
 }
 
-/* ======= DESTAQUE DE PALAVRAS (SOMENTE COR AMARELA) ======= */
+/* DESTAQUE DE PALAVRAS (SOMENTE COR AMARELA) */
 .perfil-texto .destacar {
-  color: #dfe6e9; /* cor padrão */
+  color: #dfe6e9; 
   transition: color 0.3s; 
   text-shadow: none; 
 }
@@ -304,7 +302,7 @@ section#perfil:hover .perfil-texto .destacar {
   text-shadow: none; 
 }
 
-/* ======= RESPONSIVO ======= */
+/* RESPONSIVO */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.2rem;
